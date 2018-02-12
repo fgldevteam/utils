@@ -22,6 +22,7 @@ $header = array_shift($rows);
 $csv = array();
 
 $i=0;
+
 foreach ($rows as $row) {
 	
   $csv[] = array_combine($header, $row);
