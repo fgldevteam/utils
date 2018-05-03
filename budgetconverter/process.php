@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 } 
 echo "Connected successfully";
 
-$rows = array_map('str_getcsv', file('preformatted.csv'));
+$rows = array_map('str_getcsv', file('toconvert.csv'));
 $header = array_shift($rows);
 
 $csv = array();
